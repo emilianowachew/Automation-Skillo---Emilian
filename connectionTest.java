@@ -1,12 +1,11 @@
 public class connectionTest {
+    public static void main(String[] args) {
+        String firstName = "Emilian";
+        String lastName = " Novachev";
 
-    String firstName = "Emilian";
-    String lastName = "Novachev";
-
-    public String getFirstName() {
-        return firstName;
+        System.out.println(firstName + "" + lastName);
+    }
+//connection successfully done//
     }
 
-    System.out.println(firstName + lastName);
-}
-//connection successfully done//
+
