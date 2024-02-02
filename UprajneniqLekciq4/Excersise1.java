@@ -1,15 +1,13 @@
-package lection4;
-
+package UprajneniqLekciq4;
 import java.util.Scanner;
-
-public class excersise1 {
-    public static void main(String[] args) {
+public class Excersise1 {
+        public static void main(String[] args) {
 
             Scanner whichday = new Scanner(System.in);
             System.out.println("Enter the number of the day:");
-            String dayOfWeek = whichday.nextLine();
             int userDigit = whichday.nextInt();
-        switch(userDigit)
+            String dayOfWeek = whichday.nextLine();
+            switch(userDigit)
             {
                 case 1:
                     dayOfWeek = "Monday";
@@ -35,10 +33,7 @@ public class excersise1 {
                 default:
                     dayOfWeek = "Please enter a valid input";
                     break;
-
-
-
             }
-        System.out.println("The day of the week is:" + dayOfWeek);
+            System.out.println("The day of the week is:" + dayOfWeek);
         }
     }
