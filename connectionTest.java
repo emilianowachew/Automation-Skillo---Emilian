@@ -8,4 +8,3 @@ public class connectionTest {
 //connection successfully done//
     }
 
-
