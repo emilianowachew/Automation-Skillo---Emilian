@@ -1,5 +1,6 @@
 package UprajneniqLekciq4;
 
+
 public class Person {
     protected final String name;
     protected final String gender;
@@ -67,6 +68,43 @@ public class Person {
 
         int monthDigitsInt = Integer.parseInt(monthDigits);
         int monthNumber = monthDigitsInt;
-    }
 
+        if (monthDigitsInt> 40){
+            monthNumber -= 40;
+        }
+        return dayDigits + "-" + monthNumber
+
+                public void sayHello() {System.out.println("Hello");}
+
+        public void celebrateEaster() {
+            if (this.religion == Religion.ORTHODOX || this.religion == Religion.CATHOLIC){
+                System.out.println("I celebrate Easter.");
+            } else {
+                System.out.println("I don't celebrate Easter");
+            }
+        }
+        abstract public Boolean isAdult ();
+
+        public Boolean canTakeLoan() { return (this.job != null && isAdult()); }
+        public String getName() { return name;}
+        public String getGender() {return gender;}
+        public String getLanguage (){ return language;}
+        public String getJob(){return job;}
+        public String getNationality(){ return nationality;}
+        public String getEGN() {return egn;}
+        public String getBirthDate() {return dateOfBirth;}
+        public String getCountry() {return countryOfResidence;}
+        public int getAge() {return age;}
+        public String toString() {
+            String toString =
+                    "Name: " + this.name + "\n"
+                    +"Age: " + this.age + "\n"
+                    + "EGN: " + this.egn + "\n"
+                    + "gender" + this.gender + "\n"
+                    + "Birth day: " + this.dateOfBirth + "\n"
+                    + "Nationality: " + this.nationality + "\n"
+                    + "Job: " + this.job + "\n"
+                    + "Adult: " + isAdult() + "\n";
+            return toString;
+        }
 }
